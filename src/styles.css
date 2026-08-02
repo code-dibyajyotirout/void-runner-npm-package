@@ -1,9 +1,8 @@
 .game-page-container {
     background: #0f0a23;
     font-family: 'Impact', sans-serif;
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }

@@ -1,11 +1,23 @@
 @import "../src/styles.css";
 
-html,
+/* --- BASE & RESET STYLES --- */
+:root {
+    --bg: #050505;
+    --primary: #ff003c;
+    --text: #ffffff;
+    --grid: rgba(255, 0, 60, 0.15);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background: #0f0a23;
-  overflow: hidden;
+    background-color: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
 }

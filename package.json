@@ -35,6 +35,7 @@
     "dev": "next dev",
     "build": "next build",
     "build:lib": "tsup",
+    "prepare": "npm run build:lib",
     "prepublishOnly": "npm run build:lib",
     "start": "next start",
     "lint": "eslint"

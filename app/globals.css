@@ -1,0 +1,26 @@
+@import "./game.css";
+
+/* --- BASE & RESET STYLES --- */
+:root {
+    --bg: #050505;
+    --primary: #ff003c;
+    --text: #ffffff;
+    --grid: rgba(255, 0, 60, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,61 @@
+{
+  "name": "void-runner",
+  "version": "0.1.0",
+  "description": "A 3D retro-futuristic headset-less VR runner game controlled by browser AI vision gesture tracking.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./dist/styles.css": "./dist/index.css"
+  },
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-dibyajyotirout/void-runner-npm-package.git"
+  },
+  "keywords": [
+    "react",
+    "game",
+    "3d",
+    "mediapipe",
+    "gesture-control",
+    "ai",
+    "runner",
+    "agpl"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:lib": "tsup",
+    "prepublishOnly": "npm run build:lib",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "next": "^14.2.24",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.24",
+    "tsup": "^8.4.0",
+    "typescript": "^5"
+  }
+}

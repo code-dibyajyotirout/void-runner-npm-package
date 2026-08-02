@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Filter for the neon red glow -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Black background circle -->
+  <circle cx="50" cy="50" r="48" fill="#000000" />
+  
+  <!-- Glowing neon red outer circle border -->
+  <circle cx="50" cy="50" r="42" 
+          fill="none" 
+          stroke="#ff003c" 
+          stroke-width="3.5" 
+          filter="url(#neon-glow)" />
+          
+  <!-- Glowing neon pink highlight outer circle border -->
+  <circle cx="50" cy="50" r="42" 
+          fill="none" 
+          stroke="#ff7eb9" 
+          stroke-width="1.0" 
+          opacity="0.8" />
+  
+  <!-- Tall, sharp red triangle logo inside -->
+  <polygon points="50,20 68,76 32,76" 
+           fill="none" 
+           stroke="#ff003c" 
+           stroke-width="5" 
+           stroke-linejoin="round"
+           filter="url(#neon-glow)" />
+
+  <!-- Inner core of the triangle for extra brightness -->
+  <polygon points="50,21 67.5,75 32.5,75" 
+           fill="none" 
+           stroke="#ff7eb9" 
+           stroke-width="1.5" 
+           stroke-linejoin="round"
+           opacity="0.9" />
+</svg>

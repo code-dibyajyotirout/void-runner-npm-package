@@ -9,18 +9,16 @@ A 3D retro-futuristic headset-less VR runner game built with **React**, **TypeSc
 
 ## Installation
 
-Install the package via npm:
+Install directly from GitHub:
+
+```bash
+npm install github:code-dibyajyotirout/void-runner-npm-package
+```
+
+Or via npm:
 
 ```bash
 npm install void-runner
-```
-
-or yarn / pnpm:
-
-```bash
-yarn add void-runner
-# or
-pnpm add void-runner
 ```
 
 ---

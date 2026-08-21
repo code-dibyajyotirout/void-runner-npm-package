@@ -1,12 +1,14 @@
 {
   "name": "void-runner",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A 3D retro-futuristic headset-less VR runner game controlled by browser AI vision gesture tracking.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "exports": {
     ".": {
